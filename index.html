@@ -1,84 +1,359 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Complete Web Design</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abdul Rehman Chishti — CV & Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle" class="theme-toggle-btn">
+    <i class="fas fa-moon"></i>
+  </button>
 
-  <div class="container">
-    <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
-
-    <h1>Sikanders Coding</h1>
-
-    <!-- 🔹 Form Section -->
-    <section class="form-section">
-      <h2>Contact Form</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" rows="4"></textarea>
-        <button type="submit" class="btn">Send</button>
-      </form>
-    </section>
-
-    <!-- 🔹 Table Section -->
-    <section class="table-section">
-      <h2>User Info</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Sikander</td>
-            <td>22</td>
-            <td>sikander@gmail.com</td>
-          </tr>
-          <tr>
-            <td>Yousaf</td>
-            <td>17</td>
-            <td>xyz.com</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- 🔹 Card Section -->
-    <section class="card-section">
-      <h2>Our Team</h2>
-      <div class="cards">
-        <div class="card">
-          <img src="asdf.jpg" alt="Team Member" />
-          <h3>Sikander</h3>
-          <p>Web Developer</p>
+  <!-- Header Section -->
+  <header class="hero-header">
+    <div class="container">
+      <div class="hero-content">
+        <div class="profile-section animate__animated animate__fadeIn">
+          <div class="avatar-wrapper">
+            <div class="avatar">AR</div>
+            <div class="status-dot"></div>
+          </div>
+          <div class="profile-info">
+            <h1 class="name">Abdul Rehman <span class="highlight">Chishti</span></h1>
+            <p class="tagline">Computer Science • E-Commerce Specialist</p>
+            <p class="brief">Passionate about technology, e-commerce solutions, and mentoring the next generation of computer scientists.</p>
+          </div>
         </div>
-        <div class="card">
-          <img src="asd.jpg" alt="Team Member" />
-          <h3>Yousaf</h3>
-          <p>UI/UX Designer</p>
+
+        <div class="hero-actions">
+          <div class="social-links">
+            <a href="https://wa.me/923326385155" target="_blank" class="social-btn whatsapp">
+              <i class="fab fa-whatsapp"></i>
+              <span>Chat</span>
+            </a>
+            <a href="https://instagram.com/its.army_786" target="_blank" class="social-btn instagram">
+              <i class="fab fa-instagram"></i>
+              <span>Follow</span>
+            </a>
+            <a href="https://m.facebook.com/profile.php?id=61550477638277" target="_blank" class="social-btn facebook">
+              <i class="fab fa-facebook-f"></i>
+              <span>Connect</span>
+            </a>
+            <a href="mailto:abdulrehmanchishtifarooqui@gmail.com" class="social-btn email">
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+            </a>
+          </div>
+          
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Contact Me
+            </a>
+            <a href="#" class="btn btn-secondary">
+              <i class="fas fa-download"></i> Download CV
+            </a>
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- 🔹 Button Section -->
-    <div class="center-btn">
-      <button class="btn">Learn More</button>
     </div>
-  </div>
+  </header>
+
+  <main class="container main-container">
+    <!-- Left Column -->
+    <aside class="sidebar">
+      <!-- Contact Card -->
+      <section class="card contact-card">
+        <div class="card-header">
+          <i class="fas fa-id-card"></i>
+          <h2>Contact Info</h2>
+        </div>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <p class="label">Email</p>
+              <a href="mailto:abdulrehmanchishtifarooqui@gmail.com">abdulrehmanchishtifarooqui@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <p class="label">Phone</p>
+              <a href="tel:+923326385155">+92 332 6385155</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <p class="label">Location</p>
+              <p>Mian Channu, Pakistan</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Card -->
+      <section class="card skills-card">
+        <div class="card-header">
+          <i class="fas fa-tools"></i>
+          <h2>Technical Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Software</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Microsoft Office</span>
+              <span class="skill-tag">Shopify</span>
+              <span class="skill-tag">E-Commerce Platforms</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Technical</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Hardware & Software</span>
+              <span class="skill-tag">System Troubleshooting</span>
+              <span class="skill-tag">Report Writing</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Professional</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Team Leadership</span>
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Multitasking</span>
+              <span class="skill-tag">Student Mentoring</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Languages Card -->
+      <section class="card languages-card">
+        <div class="card-header">
+          <i class="fas fa-language"></i>
+          <h2>Languages</h2>
+        </div>
+        <div class="language-progress">
+          <div class="language-item">
+            <span>Urdu</span>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 100%"></div>
+            </div>
+            <span class="level">Native</span>
+          </div>
+          <div class="language-item">
+            <span>English</span>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 85%"></div>
+            </div>
+            <span class="level">Fluent</span>
+          </div>
+        </div>
+      </section>
+    </aside>
+
+    <!-- Right Column -->
+    <section class="main-content">
+      <!-- Profile Section -->
+      <section class="card profile-section">
+        <div class="card-header">
+          <i class="fas fa-user-circle"></i>
+          <h2>Professional Profile</h2>
+        </div>
+        <p class="profile-text">
+          Dynamic computer science professional with hands-on experience at Amazon Office and specialized internships across major e-commerce platforms including eBay, Shopify, and Walmart. Proven ability to leverage technology to streamline operations, optimize digital storefronts, and drive results in fast-paced environments. Passionate about mentoring students and sharing practical knowledge in computer science.
+        </p>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">3+</div>
+            <div class="stat-label">E-Commerce Platforms</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Students Mentored</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">2</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="card experience-section">
+        <div class="card-header">
+          <i class="fas fa-briefcase"></i>
+          <h2>Work Experience</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div class="timeline-date">2023 - Present</div>
+              <h3>Amazon Office — Intern</h3>
+              <p class="company">Mian Channu, Pakistan</p>
+            </div>
+            <ul class="timeline-details">
+              <li>Assisted with office administration and data management tasks</li>
+              <li>Provided technical support and system troubleshooting</li>
+              <li>Developed enhanced time management and teamwork capabilities</li>
+            </ul>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div class="timeline-date">2022 - 2023</div>
+              <h3>E-Commerce Platform Intern</h3>
+              <p class="company">eBay • Walmart • Shopify | Burewala, Punjab</p>
+            </div>
+            <ul class="timeline-details">
+              <li>Managed product listings across multiple e-commerce platforms</li>
+              <li>Conducted market research for optimal pricing strategies</li>
+              <li>Optimized listings resulting in increased product visibility</li>
+            </ul>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div class="timeline-date">2021 - 2022</div>
+              <h3>Teaching Coach — Computer Science</h3>
+              <p class="company">Matric Students | Mian Channu, Pakistan</p>
+            </div>
+            <ul class="timeline-details">
+              <li>Tutored matric students in computer science fundamentals</li>
+              <li>Provided exam preparation and practical skills training</li>
+              <li>Mentored students in project development and problem-solving</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section class="card education-section">
+        <div class="card-header">
+          <i class="fas fa-graduation-cap"></i>
+          <h2>Education</h2>
+        </div>
+        <div class="education-grid">
+          <div class="education-item">
+            <div class="edu-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="edu-details">
+              <h3>Intermediate in Computer Science</h3>
+              <p class="institute">Punjab College, Mian Channu</p>
+              <p class="period">2021 - 2023</p>
+            </div>
+          </div>
+          
+          <div class="education-item">
+            <div class="edu-icon">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="edu-details">
+              <h3>Matriculation (Computer Science)</h3>
+              <p class="institute">Govt Higher Secondary School, Burewala</p>
+              <p class="period">2019 - 2021</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section id="contact" class="card contact-form-section">
+        <div class="card-header">
+          <i class="fas fa-paper-plane"></i>
+          <h2>Get In Touch</h2>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Subject" required>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Abdul Rehman Chishti. All rights reserved.</p>
+      <p class="footer-links">
+        <a href="mailto:abdulrehmanchishtifarooqui@gmail.com">Email</a> • 
+        <a href="tel:+923326385155">Phone</a> • 
+        <a href="https://wa.me/923326385155">WhatsApp</a>
+      </p>
+    </div>
+  </footer>
 
   <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle("dark-mode");
+    const root = document.documentElement;
+    const toggle = document.getElementById('theme-toggle');
+    const icon = toggle.querySelector('i');
+    const storedTheme = localStorage.getItem('cv-theme');
+    
+    // Apply stored theme
+    if (storedTheme === 'dark') {
+      root.setAttribute('data-theme', 'dark');
+      icon.className = 'fas fa-sun';
     }
+    
+    // Theme toggle function
+    toggle.addEventListener('click', () => {
+      if (root.getAttribute('data-theme') === 'dark') {
+        root.removeAttribute('data-theme');
+        localStorage.setItem('cv-theme', 'light');
+        icon.className = 'fas fa-moon';
+        toggle.classList.add('theme-switch-animation');
+        setTimeout(() => toggle.classList.remove('theme-switch-animation'), 300);
+      } else {
+        root.setAttribute('data-theme', 'dark');
+        localStorage.setItem('cv-theme', 'dark');
+        icon.className = 'fas fa-sun';
+        toggle.classList.add('theme-switch-animation');
+        setTimeout(() => toggle.classList.remove('theme-switch-animation'), 300);
+      }
+    });
+    
+    // Add animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+        }
+      });
+    }, observerOptions);
+    
+    // Observe all cards for animation
+    document.querySelectorAll('.card').forEach(card => {
+      observer.observe(card);
+    });
+    
+    // Form submission handler
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! I will get back to you soon.');
+      this.reset();
+    });
   </script>
 </body>
 </html>
-
-
